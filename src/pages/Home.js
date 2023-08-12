@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookBookmark } from '@fortawesome/free-solid-svg-icons';
 import image1 from '../assets/images/Pricing Cards.png';
@@ -22,8 +23,8 @@ function Home() {
           <h1>Mini Projects</h1>
           <div className='items-center hidden md:flex'>
             <nav className='flex space-x-4 md:space-y-0'>
-              <a href='/'>Home</a>
-              <a href='/about-me'>About Me</a>
+              <Link to='/'>Home</Link>
+              {/* <Link to='about-me'>About Me</Link> */}
             </nav>
           </div>
           {isOpen && (
@@ -33,15 +34,12 @@ function Home() {
             >
               <div className='bg-white fixed top-0 left-0 flex flex-col justify-center items-center p-4 space-y-4'>
                 <nav className='flex flex-col space-y-4 text-black'>
-                  <a href='/' className='text-2xl hover:text-gray-400'>
+                  <Link to='/' className='text-2xl hover:text-gray-400'>
                     Home
-                  </a>
-                  <a href='/about' className='text-2xl hover:text-gray-400'>
-                    About
-                  </a>
-                  <a href='/contact' className='text-2xl hover:text-gray-400'>
-                    Contact
-                  </a>
+                  </Link>
+                  {/* <Link to='about-me' className='text-2xl hover:text-gray-400'>
+                    About Me
+                  </Link> */}
                 </nav>
               </div>
             </div>
