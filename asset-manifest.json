@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/denny-mini-projects/static/css/main.4051ebdd.css",
-    "main.js": "/denny-mini-projects/static/js/main.2d2af7a2.js",
+    "main.js": "/denny-mini-projects/static/js/main.1a6381d6.js",
     "static/js/787.1ed0c42c.chunk.js": "/denny-mini-projects/static/js/787.1ed0c42c.chunk.js",
     "static/media/Subscribe Card.png": "/denny-mini-projects/static/media/Subscribe Card.1347b980095625dc8d5f.png",
     "static/media/Product Modal.png": "/denny-mini-projects/static/media/Product Modal.b2aecae9a1a5d7a9a429.png",
     "static/media/Pricing Cards.png": "/denny-mini-projects/static/media/Pricing Cards.4c9d348854111db2565f.png",
     "index.html": "/denny-mini-projects/index.html",
     "main.4051ebdd.css.map": "/denny-mini-projects/static/css/main.4051ebdd.css.map",
-    "main.2d2af7a2.js.map": "/denny-mini-projects/static/js/main.2d2af7a2.js.map",
+    "main.1a6381d6.js.map": "/denny-mini-projects/static/js/main.1a6381d6.js.map",
     "787.1ed0c42c.chunk.js.map": "/denny-mini-projects/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4051ebdd.css",
-    "static/js/main.2d2af7a2.js"
+    "static/js/main.1a6381d6.js"
   ]
 }
