@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Search() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className='flex flex-col justify-between mt-10 px-2 md:flex-row'>
       <div className='flex self-center space-x-2 justify-between'>
