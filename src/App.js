@@ -1,14 +1,46 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from 'react-router-dom';
+
 import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+import Header from './components/Header';
+
+function LayoutWithHeader({ children }) {
+  return (
+    <>
+      <Header />
+      {children}
+    </>
+  );
+}
 
 function App() {
   return (
-    <Router basename='/denny-mini-projects'>
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-        {/* Other routes */}
-      </Routes>
-    </Router>
+    // Body
+    <div className='flex flex-col py-4 px-4 mx-auto bg-customDark'>
+      {/* Wrapper */}
+      <div className='p-6 text-customDarkGreen bg-customLightGreen rounded-md'>
+        <Router basename='/denny-mini-projects'>
+          <Routes>
+            <Route
+              path='/'
+              element={
+                <LayoutWithHeader>
+                  <Home />
+                </LayoutWithHeader>
+              }
+            />
+            {/* Other routes */}
+
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </Router>
+      </div>
+    </div>
   );
 }
 

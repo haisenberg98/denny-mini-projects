@@ -6,7 +6,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <>
       <header className='flex justify-between items-center p-2'>
         <button onClick={() => setIsOpen(true)} className='md:hidden'>
           <div className='hamburger-line mb-1'></div>
@@ -37,7 +37,7 @@ function Header() {
           </div>
         )}
       </header>
-    </div>
+    </>
   );
 }
 
