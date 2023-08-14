@@ -1,0 +1,22 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../learnTailwindCSS/pricing-cards"
+	},
+	{
+		"path": "../learnTailwindCSS/product-modal"
+	},
+	{
+		"path": "../denny-project"
+	},
+	{
+		"path": "../learnTailwindCSS/subscribe-card"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "pricing-cards"
+  }
+}
