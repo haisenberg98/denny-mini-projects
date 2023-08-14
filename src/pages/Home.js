@@ -97,13 +97,13 @@ function Home() {
           project.description.toLowerCase().includes(searchTerm.toLowerCase())
       )
     : projects;
+
   return (
     <>
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      {/* Main */}
       {/* Projects */}
       {projectsToDisplay.length > 0 ? (
-        <main className='grid md:grid-cols-2 gap-4 justify-center mt-8'>
+        <main className='grid min-h-screen md:grid-cols-2 gap-4 justify-center mt-8'>
           {projectsToDisplay.map(project => (
             <ProjectItems
               image={project.image}
