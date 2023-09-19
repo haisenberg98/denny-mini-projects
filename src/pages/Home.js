@@ -6,6 +6,8 @@ import image1 from '../assets/images/Pricing Cards.png';
 import image2 from '../assets/images/Product Modal.png';
 import image3 from '../assets/images/Subscribe Card.png';
 import image4 from '../assets/images/details.png';
+import image5 from '../assets/images/reactboilerplate.png';
+import image6 from '../assets/images/recipehub.png';
 
 const NewTabLink = ({ to, children }) => (
   <Link
@@ -62,41 +64,66 @@ function Home() {
   const projects = [
     {
       id: 1,
-      image: image4,
-      name: 'Product Details',
-      link: 'https://haisenberg98.github.io/denny-mini-cart-project/',
-      description: 'React Project',
-    },
-    {
-      id: 2,
       image: image1,
       name: 'Pricing Cards',
       link: 'https://haisenberg98.github.io/pricing-cards/',
       description: 'TailwindCSS Project',
+      timestamp: '2023-04-18', // example timestamp
     },
     {
-      id: 3,
+      id: 2,
       image: image2,
       name: 'Product Modal',
       link: 'https://haisenberg98.github.io/product-modal/',
       description: 'TailwindCSS Project',
+      timestamp: '2023-05-18', // example timestamp
     },
     {
-      id: 4,
+      id: 3,
       image: image3,
       name: 'Subscribe Card',
       link: 'https://haisenberg98.github.io/subscribe-card/',
       description: 'TailwindCSS Project',
+      timestamp: '2023-06-18', // example timestamp
+    },
+    {
+      id: 4,
+      image: image4,
+      name: 'Product Details',
+      link: 'https://haisenberg98.github.io/denny-mini-cart-project/',
+      description: 'React Project',
+      timestamp: '2023-07-18', // example timestamp
+    },
+    {
+      id: 5,
+      image: image5,
+      name: 'React Boilerplate',
+      link: 'https://haisenberg98.github.io/react-boilerplate/',
+      description: 'React Boilerplate and TailwindCSS ready to use on Github',
+      timestamp: '2023-08-18', // example timestamp
+    },
+    {
+      id: 6,
+      image: image6,
+      name: 'Recipe Hub',
+      link: 'https://haisenberg98.github.io/recipe-hub/',
+      description:
+        'Recipe card with Spoonacular API with sorted data in Nutrient section',
+      timestamp: '2023-09-18', // example timestamp
     },
   ];
 
+  const sortedProjects = [...projects].sort(
+    (a, b) => new Date(b.timestamp) - new Date(a.timestamp)
+  );
+
   const projectsToDisplay = searchTerm
-    ? projects.filter(
+    ? sortedProjects.filter(
         project =>
           project.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
           project.description.toLowerCase().includes(searchTerm.toLowerCase())
       )
-    : projects;
+    : sortedProjects;
 
   return (
     <>

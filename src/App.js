@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
@@ -24,7 +19,7 @@ function App() {
     <div className='flex flex-col py-4 px-4 mx-auto bg-customDark'>
       {/* Wrapper */}
       <div className='p-6 text-customDarkGreen bg-customLightGreen rounded-md'>
-        <Router basename='/denny-mini-projects'>
+        <Router basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route
               path='/'
